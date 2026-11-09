@@ -16,9 +16,10 @@ def IsFull():
 def Push(Item):
     global TopOfStack
     if IsFull():
-        return -1
+        return False
     TopOfStack = TopOfStack + 1
     Stack[TopOfStack] = Item
+    return True
 
 
 # Exercise 3
