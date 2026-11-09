@@ -45,6 +45,7 @@ def Size():
 def ReverseWord(Word):
     global TopOfStack
     ReversedWord = ""
+    TopOfStack = -1
     for Letter in Word:
         Push(Letter)
     while not IsEmpty():
